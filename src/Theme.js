@@ -7,6 +7,7 @@ const theme = {
         textPrimary: "#252525",
         textSecondary: "#6E7E91",
         mainBlue: "#0366D6",
+        mainBlueBorder: "#0366D633",
         iron: "#d1d5da4d",
         white: "#FFFFFF",
     },
