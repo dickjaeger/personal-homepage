@@ -41,6 +41,7 @@ export const Link = styled(Paragraph)`
     color: ${({ theme: { colors } }) => colors.mainBlue};
     text-decoration: none;
     border-bottom: 1px solid ${({ theme: { colors } }) => colors.mainBlueBorder};
+    margin-left: 13px;
 
     &:hover {
         border-color: ${({ theme: { colors } }) => colors.mainBlue};
