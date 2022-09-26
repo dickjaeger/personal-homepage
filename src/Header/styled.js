@@ -19,14 +19,6 @@ export const TextContainer = styled.div`
     justify-content: center;
 `;
 
-export const Caption = styled.p`
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1.3;
-    margin: 0;
-    color: ${({ theme: { colors } }) => colors.textSecondary};
-`;
-
 export const Title = styled.h1`
     font-size: 38px;
     font-weight: 900;

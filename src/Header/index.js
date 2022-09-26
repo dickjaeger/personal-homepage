@@ -1,4 +1,5 @@
-import { Container, Photo, Caption, Title, LeadParagraph, TextContainer, HireMeButton } from "./styled";
+import { Container, Photo, Title, LeadParagraph, TextContainer, HireMeButton } from "./styled";
+import { Caption } from "../styled";
 import myPhoto from './my-photo.jpg';
 import { ReactComponent as MessageIcon } from './Message.svg';
 

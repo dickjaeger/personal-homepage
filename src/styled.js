@@ -22,4 +22,12 @@ export const Container = styled.main`
     padding: 14px;
 `;
 
+export const Caption = styled.p`
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    color: ${({ theme: { colors } }) => colors.textSecondary};
+`;
+
 export default GlobalStyle;
