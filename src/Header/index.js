@@ -15,7 +15,7 @@ const Header = () => (
                 iaculis non ipsum rhoncus, pretium dapibus libero.
                 Donec vitae.
             </LeadParagraph>
-            <HireMeButton href="#">
+            <HireMeButton href="mailto: wojtek.leksza@gmail.com">
                 <MessageIcon />Hire Me
             </HireMeButton>
         </TextContainer>

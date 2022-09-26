@@ -4,28 +4,9 @@ const ListTile = ({ title, items }) => (
     <Container>
         <Title>{title}</Title>
         <List>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
-            <ListItem>BlaBlaBla</ListItem>
+            {items.map((item, index) => (
+                <ListItem key={index}>{item}</ListItem>
+            ))}
         </List>
     </Container>
 );
