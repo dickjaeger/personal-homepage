@@ -7,7 +7,6 @@ import useGithubProjects from "./useGithubProjects";
 
 const Portfolio = () => {
     const githubProjects = useGithubProjects();
-    console.log(githubProjects);
 
     return (
         <Container>
@@ -20,6 +19,7 @@ const Portfolio = () => {
                     {githubProjects.projects.map(project => (
 
                         <ProjectTile
+                        key={project.id}
                             name={project.name}
                             description={project.description}
                             demo={`https://dickjaeger.github.io/${project.name}`}

@@ -6,7 +6,7 @@ const useGithubProjects = () => {
         error: false,
     });
 
-    useEffect((GithubProjects) => {
+    useEffect(() => {
         fetch("https://api.github.com/users/dickjaeger/repos")
             .then(response => response.json())
             .then(result => {
@@ -17,7 +17,6 @@ const useGithubProjects = () => {
                 setTimeout(() => setGithubProjects({
                     projects: result,
                     loading: false,
-                    error: true,
                 }), 1000);
             })
             .catch(() => {

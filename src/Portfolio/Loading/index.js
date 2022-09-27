@@ -1,5 +1,10 @@
+import { AnimatedLoading, Container, LoadingText } from "./styled";
+
 const Loading = () => (
-<>loading</>
+    <Container>
+        <LoadingText>Please wait, projects are being loaded...</LoadingText>
+        <AnimatedLoading />
+    </Container>
 );
 
 export default Loading;
