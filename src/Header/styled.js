@@ -4,7 +4,6 @@ export const Container = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 66px;
-    margin-top: 105px;
     align-items: center;
 `;
 

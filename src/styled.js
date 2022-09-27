@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
 export const Container = styled.main`
     max-width: 1244px;
     margin: auto;
+    margin-top: 105px;
     padding: 14px;
 `;
 
