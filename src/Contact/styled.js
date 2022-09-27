@@ -5,8 +5,7 @@ export const Container = styled.section`
 `;
 
 export const Mail = styled.h2`
-    margin-top: 24px;
-    margin-bottom: 0;
+    margin: 0;
     font-size: 32px;
     font-weight: 900;
     line-height: 1.2;

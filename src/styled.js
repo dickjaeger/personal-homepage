@@ -27,7 +27,32 @@ export const Caption = styled.p`
     font-weight: 700;
     line-height: 1.3;
     margin: 0;
+    margin-bottom: 12px;
     color: ${({ theme: { colors } }) => colors.textSecondary};
 `;
 
+export const Button = styled.a`
+    display: flex;
+    gap: 16px;
+    width: fit-content;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    padding: 12px 16px;
+    gap: 16px;
+    background-color: ${({ theme: { colors } }) => colors.mainBlue};
+    color: ${({ theme: { colors } }) => colors.white};
+    text-decoration: none;
+    border: 1px solid ${({ theme: { colors } }) => colors.iron};
+    border-radius: 4px;
+
+    &:hover {
+        box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;
+    };
+
+    &:active {
+        box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
+    };
+`;
 export default GlobalStyle;

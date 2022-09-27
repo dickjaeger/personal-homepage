@@ -1,12 +1,13 @@
-import { Container } from './styled';
 import Header from './Header';
 import ListTile from './ListTile';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import skills from './skills';
 import toLearn from './toLearn';
+import { Container } from './styled';
 
-function App() {
+const App = () => {
+
   return (
     <Container>
       <Header />
