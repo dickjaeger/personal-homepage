@@ -5,7 +5,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     text-align: right;
-
+    cursor: pointer;
 `;
 
 export const TogglerText = styled.p`

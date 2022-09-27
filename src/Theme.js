@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 
-const theme = {
+const lightTheme = {
     colors: {
         background: "#FBFBFE",
         background2: "#FFFFFF",
@@ -19,8 +19,27 @@ const theme = {
     }
 };
 
-const Theme = ({ children }) => (
-    <ThemeProvider theme={theme}>{children}</ThemeProvider>
+const darkTheme = {
+    colors: {
+        background: "#252525",
+        background2: "rgba(54, 54, 54, 0.72)",
+        textPrimary: "#FFFFFF",
+        textSecondary: "#FFFFFF",
+        mainBlue: "#2188FF",
+        mainBlueBorder: "rgba(3, 102, 214, 0.5)",
+        iron: "#d1d5da4d",
+        white: "#FFFFFF",
+    },
+    fonts: ["sans-serif", "Roboto"],
+    fontSizes: {
+        small: "1em",
+        medium: "2em",
+        large: "3em"
+    }
+};
+
+const Theme = ({ children, dark }) => (
+    <ThemeProvider theme={dark ? darkTheme : lightTheme}>{children}</ThemeProvider>
 );
 
 export default Theme;
