@@ -8,7 +8,11 @@ const Contact = () => (
     <Container>
         <Caption>LET'S TALK!</Caption>
         <Mail>wojtek.leksza@gmail.com</Mail>
-        <Paragraph>I’m always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me</Paragraph>
+        <Paragraph>
+            I'm open to new challenges. I learn new skills very quickly. 
+            If you need in your team someone young, ambitious and strongly 
+            committed to their work, feel free to contact me!
+            </Paragraph>
         <Links />
     </Container>
 );

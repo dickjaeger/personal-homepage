@@ -15,10 +15,8 @@ const Header = () => (
                 </Title>
             </div>
             <LeadParagraph>
-                Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Duis lectus enim,
-                iaculis non ipsum rhoncus, pretium dapibus libero.
-                Donec vitae.
+                I'm a Junior Frontend Developer specializing in React, 
+                currently looking for new job opportunities. 💻📈
             </LeadParagraph>
             <Button href="mailto: wojtek.leksza@gmail.com">
                 <MessageIcon />Hire Me

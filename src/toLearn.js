@@ -1,10 +1,9 @@
 const toLearn = [
     "React Context",
     "Node.js",
-    "Cypress",
     "Unit testing",
     "TypeScript",
-    "JS classes",
+    "Vue.js",
 ];
 
 export default toLearn;
