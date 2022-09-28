@@ -21,6 +21,10 @@ export const Container = styled.main`
     margin: auto;
     margin-top: 105px;
     padding: 14px;
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        margin-top: 34px;
+    };
 `;
 
 export const Caption = styled.p`

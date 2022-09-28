@@ -11,15 +11,14 @@ const lightTheme = {
         iron: "#d1d5da4d",
         white: "#FFFFFF",
     },
-    fonts: ["sans-serif", "Roboto"],
-    fontSizes: {
-        small: "1em",
-        medium: "2em",
-        large: "3em"
-    }
+    breakpoints: {
+        mobileMax: 767,
+        tabletMax: 1023,
+    },
 };
 
 const darkTheme = {
+    ...lightTheme,
     colors: {
         background: "#252525",
         background2: "rgba(54, 54, 54, 0.72)",
@@ -30,12 +29,6 @@ const darkTheme = {
         iron: "#d1d5da4d",
         white: "#FFFFFF",
     },
-    fonts: ["sans-serif", "Roboto"],
-    fontSizes: {
-        small: "1em",
-        medium: "2em",
-        large: "3em"
-    }
 };
 
 const Theme = ({ children, dark }) => (

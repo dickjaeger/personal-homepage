@@ -22,7 +22,7 @@ const App = () => {
         />
         <Header />
         <ListTile title="My skillset includes" items={skills} />
-        <ListTile title="What I want to learn next" items={toLearn} />
+        <ListTile title="What I want to learn next 🚀" items={toLearn} />
         <Portfolio />
         <Contact />
       </Container>

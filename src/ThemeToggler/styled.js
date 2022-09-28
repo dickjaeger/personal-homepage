@@ -6,6 +6,10 @@ export const Container = styled.div`
     align-items: center;
     text-align: right;
     cursor: pointer;
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        margin-top: -12px;
+    };
 `;
 
 export const TogglerText = styled.p`
@@ -13,7 +17,11 @@ export const TogglerText = styled.p`
     font-size: 12px;
     line-height: 1.3;
     text-transform: uppercase;
-    color: #6E7E91;
+    color: ${({ theme: { colors } }) => colors.textSecondary};
     margin: 0;
     margin-right: 12px;
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.tabletMax}px) {
+        display: none;
+    };
 `;

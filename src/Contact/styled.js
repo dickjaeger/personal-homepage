@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     margin-top: 120px;
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        margin-top: 48px;
+    };
 `;
 
 export const Mail = styled.h2`
@@ -11,6 +15,10 @@ export const Mail = styled.h2`
     line-height: 1.2;
     letter-spacing: 0.05em;
     color: ${({ theme: { colors } }) => colors.textPrimary};
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        font-size: 18px;
+    };
 `;
 
 export const Paragraph = styled.p`
@@ -22,4 +30,9 @@ export const Paragraph = styled.p`
     line-height: 1.4;
     letter-spacing: 0.05em;
     color: ${({ theme: { colors } }) => colors.textPrimary};
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        margin-top: 12px;
+        font-size: 14px;
+    };
 `;

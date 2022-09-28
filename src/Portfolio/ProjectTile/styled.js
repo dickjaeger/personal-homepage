@@ -11,6 +11,10 @@ export const Container = styled.article`
     &:hover {
         border: 6px solid ${({ theme: { colors } }) => colors.mainBlueBorder};
     };
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        padding: 24px;
+    };
 `;
 
 export const Title = styled.h3`
@@ -20,6 +24,11 @@ export const Title = styled.h3`
     letter-spacing: 0.05em;
     color: ${({ theme: { colors } }) => colors.mainBlue};
     margin-bottom: 24px;
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        font-size: 16px;
+        margin-bottom: 16px;
+    };
 `;
 
 export const Paragraph = styled.p`
@@ -31,10 +40,18 @@ export const Paragraph = styled.p`
     line-height: 1.4;
     letter-spacing: 0.05em;
     color: ${({ theme: { colors } }) => colors.textSecondary};
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        font-size: 14px;
+    };
 `;
 
 export const Description = styled(Paragraph)`
     margin-bottom: 24px;
+    
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
+        margin-bottom: 16px;
+    };
 `;
 
 export const Link = styled(Paragraph)`
