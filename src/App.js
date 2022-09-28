@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import GlobalStyle, { Container } from './styled';
+import useDarkMode from './useDarkMode';
 import Theme from './Theme';
 import ThemeToggler from './ThemeToggler';
 import Header from './Header';
@@ -10,7 +10,7 @@ import skills from './skills';
 import toLearn from './toLearn';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useDarkMode();
 
   return (
     <Theme dark={darkMode}>

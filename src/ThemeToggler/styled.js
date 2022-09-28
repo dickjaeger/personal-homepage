@@ -21,7 +21,7 @@ export const TogglerText = styled.p`
     margin: 0;
     margin-right: 12px;
 
-    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.tabletMax}px) {
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
         display: none;
     };
 `;
