@@ -93,9 +93,9 @@
 
   
 
-![Example screenshot](./screenshot1.jpg)
-![Example screenshot](./screenshot3.jpg)
-![Example screenshot](./screenshot2.jpg)
+![Example screenshot](./Screenshot1.jpg)
+![Example screenshot](./Screenshot3.jpg)
+![Example screenshot](./Screenshot2.jpg)
 
   
 
