@@ -1,4 +1,4 @@
-const skills = [
+export const skills = [
     "React",
     "JavaScript: ES6+",
     "Semantic & accessible HTML",
@@ -22,4 +22,10 @@ const skills = [
     "Git",
 ];
 
-export default skills;
+export const skillsToLearn = [
+    "React Context",
+    "Node.js",
+    "Unit testing",
+    "TypeScript",
+    "Vue.js",
+];

@@ -1,4 +1,4 @@
-import { Caption } from "../styled";
+import { Caption } from "../../../styled";
 import Links from "./Links";
 import { Container, Mail, Paragraph } from "./styled";
 

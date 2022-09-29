@@ -1,6 +1,6 @@
 import { ReactComponent as DangerIcon } from "./Danger.svg";
 import { Container, Header, HeaderParagraph, Info } from "./styled";
-import { Button } from "../../styled";
+import { Button } from "../../../../styled";
 
 const Error = () => (
     <Container>

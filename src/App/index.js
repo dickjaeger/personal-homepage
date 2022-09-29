@@ -1,14 +1,12 @@
 import GlobalStyle, { Container } from './styled';
 import useDarkMode from './useDarkMode';
-import Theme from './Theme';
-import ThemeToggler from './ThemeToggler';
-import Header from './Header';
-import ListTile from './ListTile';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import skills from './skills';
-import toLearn from './toLearn';
-
+import Theme from '../Theme';
+import ThemeToggler from './common/ThemeToggler';
+import Header from './features/HomePage/Header';
+import ListTile from './features/HomePage/ListTile';
+import Portfolio from './features/HomePage/Portfolio';
+import Contact from './features/HomePage/Contact';
+import { skills, skillsToLearn } from '../skills';
 const App = () => {
   const [darkMode, setDarkMode] = useDarkMode();
 
@@ -22,7 +20,7 @@ const App = () => {
         />
         <Header />
         <ListTile title="My skillset includes" items={skills} />
-        <ListTile title="What I want to learn next 🚀" items={toLearn} />
+        <ListTile title="What I want to learn next 🚀" items={skillsToLearn} />
         <Portfolio />
         <Contact />
       </Container>
