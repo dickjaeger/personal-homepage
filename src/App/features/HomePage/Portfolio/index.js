@@ -1,33 +1,30 @@
-import { Container, ProjectsWrapper, SubTitle, Title } from "./styled";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchGithubProjects, selectProjects, selectStatus } from "../slice";
+import githubUsername from "./githubUsername";
+import Content from "./Content";
+import { Container, SubTitle, Title } from "./styled";
 import { ReactComponent as GithubIcon } from './github.svg';
-import ProjectTile from "./ProjectTile";
-import Error from "./Error"
-import Loading from "./Loading"
-import useGithubProjects from "./useGithubProjects";
 
 const Portfolio = () => {
-    const githubProjects = useGithubProjects();
+    const dispatch = useDispatch();
+
+    const projects = useSelector(selectProjects);
+    const projectsStatus = useSelector(selectStatus);
+    
+    useEffect(() => {
+        dispatch(fetchGithubProjects(githubUsername));
+    }, [dispatch]);
 
     return (
         <Container>
             <GithubIcon />
             <Title>Portfolio</Title>
             <SubTitle>My recent projects</SubTitle>
-            {githubProjects.error || githubProjects.loading
-                ? githubProjects.error ? <Error /> : <Loading />
-                : <ProjectsWrapper>
-                    {githubProjects.projects.map(project => (
-
-                        <ProjectTile
-                        key={project.id}
-                            name={project.name}
-                            description={project.description}
-                            demo={`https://dickjaeger.github.io/${project.name}`}
-                            code={`https://github.com/dickjaeger/${project.name}`}
-                        />
-                    ))}
-                </ProjectsWrapper>
-            }
+            <Content 
+                projects = {projects}
+                status ={projectsStatus}
+            />
         </Container>
     );
 };

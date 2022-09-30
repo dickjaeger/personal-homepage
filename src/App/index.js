@@ -1,28 +1,19 @@
+import { useSelector } from 'react-redux';
+import { selectIsDarkMode } from './common/ThemeToggler/slice';
 import GlobalStyle, { Container } from './styled';
-import useDarkMode from './useDarkMode';
-import Theme from '../Theme';
+import Theme from './Theme';
 import ThemeToggler from './common/ThemeToggler';
-import Header from './features/HomePage/Header';
-import ListTile from './features/HomePage/ListTile';
-import Portfolio from './features/HomePage/Portfolio';
-import Contact from './features/HomePage/Contact';
-import { skills, skillsToLearn } from '../skills';
+import HomePage from './features/HomePage';
+
 const App = () => {
-  const [darkMode, setDarkMode] = useDarkMode();
+  const darkMode = useSelector(selectIsDarkMode);
 
   return (
     <Theme dark={darkMode}>
       <GlobalStyle />
       <Container>
-        <ThemeToggler
-          darkMode={darkMode}
-          setDarkMode={setDarkMode}
-        />
-        <Header />
-        <ListTile title="My skillset includes" items={skills} />
-        <ListTile title="What I want to learn next 🚀" items={skillsToLearn} />
-        <Portfolio />
-        <Contact />
+        <ThemeToggler />
+        <HomePage />
       </Container>
     </Theme>
   );

@@ -1,8 +1,8 @@
 import { Box, Slider, SwitchIcon } from "./styled";
 
-const Switch = ({ on }) => (
+const Switch = ({ $on }) => (
     <Box>
-        <Slider on={on}>
+        <Slider $on={$on}>
             <SwitchIcon />
         </Slider>
     </Box>

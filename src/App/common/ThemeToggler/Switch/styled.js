@@ -21,7 +21,7 @@ export const Slider = styled.span`
     background-color: currentColor;
     transition: all 0.2s;
     
-    ${({ on }) => on && css`
+    ${({ $on }) => $on && css`
         transform: translateX(22px);
     `};
 `;
