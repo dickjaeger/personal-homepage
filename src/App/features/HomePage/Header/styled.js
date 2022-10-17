@@ -16,13 +16,13 @@ export const Container = styled.header`
 `;
 
 export const Photo = styled.img`
-    width: 384px;
-    height: 384px;
-    border-radius: 50%;
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
 
     @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
         width: 128px;
-        height: 128px;
     };
 `;
 
