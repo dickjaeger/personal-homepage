@@ -19,8 +19,8 @@ const Content = ({ status, projects }) => {
                             key={project.id}
                             name={project.name}
                             description={project.description}
-                            demo={`https://dickjaeger.github.io/${project.name}`}
-                            code={`https://github.com/dickjaeger/${project.name}`}
+                            demo={`https://wojciech-leksza.github.io/${project.name}`}
+                            code={`https://github.com/wojciech-leksza/${project.name}`}
                         />
                     ))}
                 </Container>
