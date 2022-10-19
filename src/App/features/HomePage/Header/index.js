@@ -1,8 +1,7 @@
-import { Container, Photo, Title, LeadParagraph, TextContainer } from "./styled";
+import { Container, Photo, Title, LeadParagraph, TextContainer, MessageIcon } from "./styled";
 import { Button } from "../../../styled";
 import { Caption } from "../../../styled";
 import myPhoto from './my-photo.jpg';
-import { ReactComponent as MessageIcon } from './Message.svg';
 
 const Header = () => (
     <Container>

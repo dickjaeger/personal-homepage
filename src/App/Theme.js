@@ -14,8 +14,8 @@ const lightTheme = {
         white: "#FFFFFF",
     },
     breakpoints: {
-        mobileMax: 767,
-        tabletMax: 1023,
+        mobileMax: 650,
+        tabletMax: 900,
     },
 };
 

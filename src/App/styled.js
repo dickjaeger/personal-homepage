@@ -59,5 +59,11 @@ export const Button = styled.a`
     &:active {
         box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
     };
+
+    @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.tabletMax}px) {
+        font-size: 14px;
+        padding: 8px 12px;
+        gap: 8px;
+    };
 `;
 export default GlobalStyle;
