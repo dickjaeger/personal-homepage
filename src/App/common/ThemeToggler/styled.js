@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    justify-content: flex-end;
+    display: inline-flex;
+    float: right;
     align-items: center;
     text-align: right;
     color: ${({ theme: { colors } }) => colors.textSecondary};
