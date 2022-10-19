@@ -19,6 +19,7 @@ export const Photo = styled.img`
     height: auto;
     object-fit: contain;
     border-radius: 20px;
+    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.1), 0px 16px 58px rgba(9, 10, 51, 0.1);
 
     @media screen and (max-width: ${({ theme: { breakpoints } }) => breakpoints.mobileMax}px) {
         width: 160px;
