@@ -51,6 +51,7 @@ export const Button = styled.a`
     text-decoration: none;
     border: 1px solid ${({ theme: { colors } }) => colors.iron};
     border-radius: 4px;
+    transition: box-shadow 0.2s;
 
     &:hover {
         box-shadow: 2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;

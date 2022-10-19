@@ -7,6 +7,7 @@ export const Container = styled.article`
     border: 6px solid ${({ theme: { colors } }) => colors.iron};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
+    transition: border 0.2s;
 
     &:hover {
         border: 6px solid ${({ theme: { colors } }) => colors.mainBlueBorder};
@@ -59,6 +60,7 @@ export const Link = styled(Paragraph)`
     text-decoration: none;
     border-bottom: 1px solid ${({ theme: { colors } }) => colors.mainBlueBorder};
     margin-left: 13px;
+    transition: border-color 0.2s;
 
     &:hover {
         border-color: ${({ theme: { colors } }) => colors.mainBlue};

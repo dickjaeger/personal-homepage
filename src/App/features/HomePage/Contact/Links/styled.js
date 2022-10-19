@@ -13,6 +13,7 @@ export const Container = styled.footer`
 export const Link = styled.a`
     color: ${({ theme: { colors } }) => colors.textPrimary};
     margin-right: 24px;
+    transition: color 0.2s;
 
     &:hover {
         color: ${({ theme: { colors } }) => colors.mainBlue};
